@@ -1726,6 +1726,11 @@ body.light-theme .form-group textarea {
         margin-left: auto;
     }
 
+    .hamburger.active span {
+        transform: none;
+        opacity: 1;
+    }
+
     .nav-right {
         position: fixed;
         top: 70px;
@@ -1765,6 +1770,7 @@ body.light-theme .form-group textarea {
 
     .theme-toggle {
         margin-top: var(--spacing-lg);
+        align-self: flex-end;
     }
 
     .hero-container {
