@@ -1723,25 +1723,28 @@ body.light-theme .form-group textarea {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+        margin-left: auto;
     }
 
     .nav-right {
         position: fixed;
         top: 70px;
-        left: -100%;
+        right: -100%;
+        left: auto;
         flex-direction: column;
         background-color: var(--bg-secondary);
-        width: 100%;
+        width: min(260px, 80vw);
         height: calc(100vh - 70px);
-        transition: left var(--transition-base);
-        padding: var(--spacing-lg) 0;
+        transition: right var(--transition-base);
+        padding: var(--spacing-lg) 1.25rem;
         gap: var(--spacing-md);
         z-index: 999;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        align-items: stretch;
     }
 
     .nav-right.active {
-        left: 0;
+        right: 0;
     }
 
     .nav-menu {
@@ -1749,7 +1752,7 @@ body.light-theme .form-group textarea {
         flex-direction: column;
         background-color: transparent;
         width: 100%;
-        text-align: center;
+        text-align: right;
         padding: 0;
         gap: var(--spacing-md);
         box-shadow: none;
@@ -2042,9 +2045,9 @@ body.light-theme .form-group textarea {
     }
 
     .about-img {
-        width: min(100%, 360px);
+        width: min(100%, 300px);
         height: auto;
-        max-height: 420px;
+        max-height: 360px;
     }
 }
 
