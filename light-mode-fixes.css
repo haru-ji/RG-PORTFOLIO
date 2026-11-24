@@ -1,0 +1,54 @@
+body.light-theme .navbar {
+    box-shadow: 0 2px 8px rgba(23, 25, 35, 0.06);
+}
+
+body.light-theme .intro,
+body.light-theme .hero {
+    background: var(--bg-primary);
+}
+
+body.light-theme .reveal {
+    opacity: 1 !important;
+    transition: opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1) !important;
+    transform: translateY(0) !important;
+}
+
+body.light-theme .reveal-item {
+    opacity: 1 !important;
+    transition: opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1), transform 0.45s cubic-bezier(0.22, 1, 0.36, 1) !important;
+    transform: translateY(0) !important;
+}
+
+body.light-theme .project-card,
+body.light-theme .project-card .project-image,
+body.light-theme .skill-tag,
+body.light-theme .cta-button,
+body.light-theme .submit-button,
+body.light-theme .social-link,
+body.light-theme .name-letter,
+body.light-theme .info-item {
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, background-color 0.25s ease !important;
+}
+
+body.light-theme .project-card:hover {
+    transform: translateY(-12px) scale(1.03) !important;
+}
+
+body.light-theme .skill-tag:hover {
+    transform: translateY(-4px) scale(1.04) !important;
+}
+
+body.light-theme .cta-button:hover,
+body.light-theme .submit-button:hover,
+body.light-theme .social-link:hover {
+    transform: translateY(-4px) scale(1.06) !important;
+}
+
+body.light-theme .intro-name .name-letter-glyph {
+    transition: transform 0.18s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+body.light-theme .intro-name .name-letter:hover .name-letter-glyph {
+    transform: translateY(-6px) !important;
+}
+
